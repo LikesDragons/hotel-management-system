@@ -51,3 +51,6 @@ dist/
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Microsoft Office temporary files
+~$*
