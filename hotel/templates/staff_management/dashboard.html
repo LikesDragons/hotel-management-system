@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Staff Dashboard</title>
+</head>
+<body>
+
+<h1>Staff Dashboard</h1>
+
+<p>Welcome {{ request.user.first_name }}</p>
+
+<a href="{% url 'guest_logout' %}">
+    Logout
+</a>
+
+</body>
+</html>

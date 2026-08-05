@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guest Sign Up</title>
+</head>
+<body>
+
+<h1>Guest Sign Up</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button type="submit">Create Account</button>
+</form>
+
+<p>
+    Already have an account?
+    <a href="{% url 'guest_login' %}">Login</a>
+</p>
+
+</body>
+</html>
