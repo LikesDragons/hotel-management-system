@@ -12,10 +12,4 @@ urlpatterns = [
     path("logout/", views.GuestLogoutView.as_view(), name="guest_logout"),
 
     path("dashboard/", views.GuestDashboardView.as_view(), name="guest_dashboard"),
-
-    path("staff/dashboard/", views.StaffDashboardView.as_view(), name="staff_dashboard"),
-
-    path("staff/login/", views.StaffLoginView.as_view(), name="staff_login"),
-
-    path("staff/logout/", views.StaffLogoutView.as_view(), name="staff_logout"),
 ]
